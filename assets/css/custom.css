@@ -1,0 +1,120 @@
+/* severity styling */
+.severity-critical {
+    color: var(--pico-color-red-900);
+}
+
+.severity-high {
+    color: var(--pico-color-red-500);
+}
+
+.severity-medium {
+    color: var(--pico-color-pumpkin-300);
+}
+
+.severity-low {
+    color: var(--pico-color-green-350);
+}
+
+.severity-info {
+    color: var(--pico-color-azure-450);
+}
+
+/* icon highlighting */
+.icon-delete:hover {
+    filter: invert(27%) sepia(100%) saturate(1000%) hue-rotate(-50deg) brightness(91%) contrast(89%);
+}
+  
+.icon:hover {
+    filter: invert(42%) sepia(93%) saturate(3287%) hue-rotate(176deg) brightness(90%) contrast(85%);
+}
+
+/* vulnerability template upload styling */
+article.file-upload-area {
+    padding: 20px;
+    border: 2px dashed #ccc;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    transition: border-color 0.3s;
+}
+
+article.file-upload-area h2 {
+    margin-bottom: 10px;
+}
+
+article.file-upload-area p {
+    font-size: 14px;
+    color: #666;
+}
+
+article.file-upload-area:hover {
+    border-color: #999;
+    cursor: pointer;
+}
+
+article.file-upload-area.dragging {
+    border-color: #3498db;
+    background-color: #f0faff;
+}
+
+/* accordion styling */
+summary.issue-list {
+    border: 1px solid #999;
+}
+
+#issue-list {
+    padding-inline-start: 0px;
+}
+
+summary.vuln-list {
+    border: 1px solid #999;
+}
+
+#vuln-list {
+    padding-inline-start: 0px;
+}
+
+/* fix generate report button width */
+#generate-dropdown {
+    display: inline-block;
+    max-width: max-content;
+    text-align: left;
+}
+
+/* add button margins */
+[role="button"] {
+    margin: 2px;
+    margin-left: 2px;
+    margin-right: 2px; 
+}
+
+/* fix dropdown spacing */
+summary > * {
+    padding: 4px;
+  }
+
+.login-container {
+    background: #ffffff;
+    padding: 20px 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login-body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #f0f0f0;
+}
+
+.number-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: #F9FAFA;
+    border-radius: 10px;
+}

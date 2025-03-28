@@ -1,0 +1,8 @@
+docxtpl==0.18.0
+Markdown==3.6
+matplotlib==3.9.3
+bcrypt==4.2.1
+python_docx==1.1.2
+python_fasthtml
+starlette==0.41.3
+password-validator==1.0
