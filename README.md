@@ -39,7 +39,7 @@ For specific architecture use this command:
 docker buildx build --platform linux/amd64 -t atri-reports .
 ```
 
-If you want a custom naming convention replace `atri-reports` with a name for the your Docker image.
+If you want a custom naming convention replace `atri-reports` with a name for the Docker image.
 
 ### 3. Run Docker Container
 To start a container from the built image on port 80, use the following command:
