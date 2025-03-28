@@ -42,15 +42,15 @@ docker buildx build --platform linux/amd64 -t atri-reports .
 If you want a custom naming convention replace `atri-reports` with a name for the your Docker image.
 
 ### 3. Run Docker Container
-To start a container from the built image on port 443, use the following command:
+To start a container from the built image on port 80, use the following command:
 
 ```bash
-docker run -it -p 443:443 atri-reports
+docker run -it -p 80:5001 atri-reports
 ```
 
 ### 4. Log in to application
 To log in to the application visit the following URL:
 
-- https://localhost/login
+- http://localhost/login
 
 Default user is "atri" and password for first login will be generated and displayed to the console.
