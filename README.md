@@ -5,6 +5,8 @@ Writing a pentest report with DOCX templates has never been easier! Atri Reports
 
 **Atri** (a short form of *Attribute*) **Reports** is a tool written in Python using [FastHTML](https://fastht.ml/) framework that make security assessment report writing faster. It uses [docxtpl](https://docxtpl.readthedocs.io/en/latest/) library which allows report generation using simple Jinja-like template handles. Application uses HTTP by default, use reverse proxy to expose the application using SSL.
 
+![Report Generation](assets/images/generation.png)
+
 ▶️ If you want a quick overview of the app can check out the [demo](https://vimeo.com/1070240043/fd4183d5ec).
 
 🧑‍🎓 If you want to see a tutorial how to create a template from an [example](https://github.com/hmaverickadams/TCM-Security-Sample-Pentest-Report/blob/master/Demo%20Company%20-%20Security%20Assessment%20Findings%20Report.docx) pentest report see the [tutorial](https://vimeo.com/1070240213/001810725f).
