@@ -15,6 +15,7 @@ import re
 import time
 import secrets
 from password_validator import PasswordValidator
+import uvicorn
 
 # authentication
 login_redir = RedirectResponse('/login', status_code=303)
@@ -1300,4 +1301,4 @@ async def get():
              cls='container'))
 
 # run the application
-serve()
+uvicorn.run(app, host="0.0.0.0", port=5001, ssl_keyfile="key.pem", ssl_certfile="cert.pem")

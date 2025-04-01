@@ -3,7 +3,7 @@ Writing a pentest report with DOCX templates has never been easier! Atri Reports
 
 ![Dashboard Screenshot](assets/images/dashboard.png)
 
-**Atri** (a short form of *Attribute*) **Reports** is a tool written in Python using [FastHTML](https://fastht.ml/) framework that make security assessment report writing faster. It uses [docxtpl](https://docxtpl.readthedocs.io/en/latest/) library which allows report generation using simple Jinja-like template handles. Application uses HTTP by default, use reverse proxy to expose the application using SSL.
+**Atri** (a short form of *Attribute*) **Reports** is a tool written in Python using [FastHTML](https://fastht.ml/) framework that make security assessment report writing faster. It uses [docxtpl](https://docxtpl.readthedocs.io/en/latest/) library which allows report generation using simple Jinja-like template handles.
 
 ![Report Generation](assets/images/generation.png)
 
@@ -44,15 +44,15 @@ docker buildx build --platform linux/amd64 -t atri-reports .
 If you want a custom naming convention replace `atri-reports` with a name for the Docker image.
 
 ### 3. Run Docker Container
-To start a container from the built image on port 80, use the following command:
+To start a container from the built image and expose port 5001, use the following command:
 
 ```bash
-docker run -it -p 80:5001 atri-reports
+docker run -it -p 443:5001 atri-reports
 ```
 
 ### 4. Log in to application
 To log in to the application visit the following URL:
 
-- http://localhost/login
+- https://localhost/login
 
 Default user is "atri" and password for first login will be generated and displayed to the console.

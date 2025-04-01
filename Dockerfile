@@ -7,6 +7,9 @@ WORKDIR /atri-reports
 COPY . /atri-reports
 
 RUN chown -R atri:atri /atri-reports
+RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
+    -keyout /atri-reports/key.pem -out /atri-reports/cert.pem \
+    -subj "/CN=localhost"
 USER atri
 ENV PYTHONUNBUFFERED=1
 
