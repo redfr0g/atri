@@ -7,12 +7,14 @@ WORKDIR /atri-reports
 COPY . /atri-reports
 
 RUN chown -R atri:atri /atri-reports
+
+USER atri
+
 RUN openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
     -keyout /atri-reports/key.pem -out /atri-reports/cert.pem \
     -subj "/CN=localhost"
-USER atri
-ENV PYTHONUNBUFFERED=1
 
+ENV PYTHONUNBUFFERED=1
 RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python3", "main.py"]
